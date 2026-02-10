@@ -1,9 +1,9 @@
-// Theme Management
+// Gestión de Temas
 function toggleTheme() {
     document.documentElement.classList.toggle('dark');
 }
 
-// Translation Data
+// Datos de Traducción
 const translations = {
     en: {
         "nav-home": "Home",
@@ -74,7 +74,7 @@ const translations = {
         "code-subtitle": "Proyectos desarrollados desde cero utilizando código personalizado sin CMS.",
         "tag-code": "Código a Medida",
         "code-p1-title": "Rick & Morty Explorer",
-        "code-p1-desc": "Aplicación web que consume la API de Rick & Morty donde puedes buscar a todos los personajes y ver su información detallada. Creada con Vue.js.",
+        "code-p1-desc": "Aplicación web que consume la API de Rick & Morty donde puedes buscar a todos los personajes y ver su información detallada, como en cuántos episodios aparecen. Creada con Vue.js.",
         "code-p2-title": "Cronómetro Flutter",
         "code-p2-desc": "Aplicación de cronómetro de alto rendimiento desarrollada con Flutter. Enfocada en la precisión y gestión de estado limpia.",
         "code-p3-title": "Brackets para Juegos",
@@ -114,7 +114,7 @@ function setLanguage(lang) {
     document.querySelectorAll(`.${lang}-btn`).forEach(btn => btn.classList.add('active'));
 }
 
-// Initialize
+// Inicialización
 document.getElementById('year').textContent = new Date().getFullYear();
 const btn = document.getElementById('mobile-menu-button');
 const menu = document.getElementById('mobile-menu');
