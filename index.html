@@ -26,35 +26,55 @@
                 <!-- Menú Escritorio -->
                 <div class="hidden md:flex items-center space-x-8">
                     <div class="flex items-baseline space-x-8 font-medium">
-                        <a href="#home"       class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-home">Home</a>
-                        <a href="#projects"   class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-projects">WordPress</a>
-                        <a href="#code-projects" class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-code">Projects</a>
-                        <a href="#skills"     class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-skills">Skills</a>
-                        <a href="#services"   class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-services">What I Build</a>
-                        <a href="#contact"    class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition" data-key="nav-contact">Contact</a>
+                        <a href="#home"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-home">Home</a>
+                        <a href="#projects"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-projects">WordPress</a>
+                        <a href="#code-projects"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-code">Projects</a>
+                        <a href="#skills"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-skills">Skills</a>
+                        <a href="#services"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-services">What I Build</a>
+                        <a href="#contact"
+                            class="text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                            data-key="nav-contact">Contact</a>
                     </div>
 
                     <div class="flex items-center space-x-4 ml-4">
-                        <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
+                        <button onclick="toggleTheme()"
+                            class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
                             <i class="fa-solid fa-moon dark:hidden"></i>
                             <i class="fa-solid fa-sun hidden dark:block"></i>
                         </button>
-                        <div class="flex items-center space-x-1 border border-slate-200 dark:border-slate-700 rounded-lg p-1">
-                            <button onclick="setLanguage('en')" class="lang-btn en-btn px-2 py-1 text-xs font-bold rounded transition active dark:text-slate-300">EN</button>
-                            <button onclick="setLanguage('es')" class="lang-btn es-btn px-2 py-1 text-xs font-bold rounded transition dark:text-slate-300">ES</button>
+                        <div
+                            class="flex items-center space-x-1 border border-slate-200 dark:border-slate-700 rounded-lg p-1">
+                            <button onclick="setLanguage('en')"
+                                class="lang-btn en-btn px-2 py-1 text-xs font-bold rounded transition active dark:text-slate-300">EN</button>
+                            <button onclick="setLanguage('es')"
+                                class="lang-btn es-btn px-2 py-1 text-xs font-bold rounded transition dark:text-slate-300">ES</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Área Móvil -->
                 <div class="md:hidden flex items-center space-x-2">
-                    <button onclick="toggleTheme()" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
+                    <button onclick="toggleTheme()"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
                         <i class="fa-solid fa-moon dark:hidden"></i>
                         <i class="fa-solid fa-sun hidden dark:block"></i>
                     </button>
-                    <div class="flex items-center space-x-1 border border-slate-200 dark:border-slate-700 rounded-lg p-1">
-                        <button onclick="setLanguage('en')" class="lang-btn en-btn px-2 py-1 text-xs font-bold rounded transition active dark:text-slate-300">EN</button>
-                        <button onclick="setLanguage('es')" class="lang-btn es-btn px-2 py-1 text-xs font-bold rounded transition dark:text-slate-300">ES</button>
+                    <div
+                        class="flex items-center space-x-1 border border-slate-200 dark:border-slate-700 rounded-lg p-1">
+                        <button onclick="setLanguage('en')"
+                            class="lang-btn en-btn px-2 py-1 text-xs font-bold rounded transition active dark:text-slate-300">EN</button>
+                        <button onclick="setLanguage('es')"
+                            class="lang-btn es-btn px-2 py-1 text-xs font-bold rounded transition dark:text-slate-300">ES</button>
                     </div>
                     <button id="mobile-menu-button" class="text-slate-600 dark:text-slate-400 p-2 focus:outline-none">
                         <i class="fa-solid fa-bars-staggered text-2xl"></i>
@@ -64,14 +84,26 @@
         </div>
 
         <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
             <div class="px-4 pt-2 pb-6 space-y-2 text-center shadow-inner">
-                <a href="#home"          class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800" data-key="nav-home">Home</a>
-                <a href="#projects"      class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800" data-key="nav-projects">WordPress</a>
-                <a href="#code-projects" class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800" data-key="nav-code">Projects</a>
-                <a href="#skills"        class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800" data-key="nav-skills">Skills</a>
-                <a href="#services"      class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800" data-key="nav-services">What I Build</a>
-                <a href="#contact"       class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold" data-key="nav-contact">Contact</a>
+                <a href="#home"
+                    class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800"
+                    data-key="nav-home">Home</a>
+                <a href="#projects"
+                    class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800"
+                    data-key="nav-projects">WordPress</a>
+                <a href="#code-projects"
+                    class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800"
+                    data-key="nav-code">Projects</a>
+                <a href="#skills"
+                    class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800"
+                    data-key="nav-skills">Skills</a>
+                <a href="#services"
+                    class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-50 dark:border-slate-800"
+                    data-key="nav-services">What I Build</a>
+                <a href="#contact" class="block px-3 py-3 text-slate-600 dark:text-slate-300 font-semibold"
+                    data-key="nav-contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -84,9 +116,12 @@
                 <!-- Imagen de Perfil -->
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="profile-image-ring">
-                        <div class="w-48 h-48 md:w-64 md:h-64 bg-white dark:bg-slate-900 rounded-full p-1.5 shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-800 relative">
-                            <img src="./src/img/img.jpg" alt="Jose Monterola" class="w-full h-full object-cover rounded-full">
-                            <div class="absolute inset-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800 -z-10">
+                        <div
+                            class="w-48 h-48 md:w-64 md:h-64 bg-white dark:bg-slate-900 rounded-full p-1.5 shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-800 relative">
+                            <img src="./src/img/img.jpg" alt="Jose Monterola"
+                                class="w-full h-full object-cover rounded-full">
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800 -z-10">
                                 <i class="fa-solid fa-user text-5xl text-slate-300"></i>
                             </div>
                         </div>
@@ -95,32 +130,48 @@
 
                 <!-- Bio -->
                 <div class="lg:col-span-7 text-center lg:text-left">
-                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-indigo-700 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-900/30 rounded-full border border-indigo-100 dark:border-indigo-800" data-key="hero-badge">
+                    <span
+                        class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-indigo-700 dark:text-indigo-400 uppercase bg-indigo-50 dark:bg-indigo-900/30 rounded-full border border-indigo-100 dark:border-indigo-800"
+                        data-key="hero-badge">
                         Web Developer
                     </span>
                     <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6 leading-tight">
                         <span data-key="hero-title-prefix">Hi, I'm</span> <br>
                         <span class="gradient-text">Jose Monterola</span>
                     </h1>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0" data-key="hero-desc">
-                        Web developer with 6+ years of professional experience in digital agency environments. I implement client projects in WordPress and build custom full-stack applications using React, FastAPI, and PostgreSQL.
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
+                        data-key="hero-desc">
+                        Web developer with 6+ years of professional experience in digital agency environments. I
+                        implement client projects in WordPress and build custom full-stack applications using React,
+                        FastAPI, and PostgreSQL.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#contact" class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-200 dark:shadow-indigo-900/40 text-center" data-key="hero-cta-contact">
+                        <a href="#contact"
+                            class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-200 dark:shadow-indigo-900/40 text-center"
+                            data-key="hero-cta-contact">
                             Let's Talk
                         </a>
-                        <a href="#code-projects" class="px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-2xl font-bold hover:border-indigo-300 dark:hover:border-indigo-600 transition-all text-center" data-key="hero-cta-projects">
+                        <a href="#code-projects"
+                            class="px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-2xl font-bold hover:border-indigo-300 dark:hover:border-indigo-600 transition-all text-center"
+                            data-key="hero-cta-projects">
                             See My Work
                         </a>
                         <div class="flex gap-3 justify-center">
-                            <a href="https://www.linkedin.com/in/jmonterolad/" target="_blank" class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm" title="LinkedIn">
+                            <a href="https://www.linkedin.com/in/jmonterolad/" target="_blank"
+                                class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm"
+                                title="LinkedIn">
                                 <i class="fa-brands fa-linkedin-in text-xl"></i>
                             </a>
-                            <a href="https://github.com/jmonterolad" target="_blank" class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm" title="GitHub">
+                            <a href="https://github.com/jmonterolad" target="_blank"
+                                class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm"
+                                title="GitHub">
                                 <i class="fa-brands fa-github text-xl"></i>
                             </a>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmonterolad@gmail.com" target="_blank" class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm" title="Email">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmonterolad@gmail.com"
+                                target="_blank"
+                                class="w-14 h-14 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-2xl flex items-center justify-center hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all shadow-sm"
+                                title="Email">
                                 <i class="fa-solid fa-envelope text-xl"></i>
                             </a>
                         </div>
@@ -134,72 +185,110 @@
     <section id="projects" class="py-24 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="mb-16 text-center lg:text-left">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-key="projects-title">WordPress Projects</h2>
-                <p class="text-slate-500 dark:text-slate-400 max-w-xl" data-key="projects-subtitle">Client projects delivered in a professional agency environment.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4"
+                    data-key="projects-title">WordPress Projects</h2>
+                <p class="text-slate-500 dark:text-slate-400 max-w-xl" data-key="projects-subtitle">Client projects
+                    delivered in a professional agency environment.</p>
                 <div class="h-1.5 w-20 bg-indigo-600 rounded-full mt-6 mx-auto lg:mx-0"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 <!-- Trust Counsel -->
-                <div class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
-                    <div class="aspect-video bg-slate-200 dark:bg-slate-800 flex items-center justify-center relative overflow-hidden">
-                        <i class="fa-solid fa-scale-balanced text-6xl text-slate-300 dark:text-slate-700 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./src/img/trustcounsel.jpg" alt="Trust Counsel"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute top-5 left-5">
-                            <span class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-full">Client Project</span>
+                            <span
+                                class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                data-key="tag-full">Client Project</span>
                         </div>
                     </div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Trust Counsel</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed" data-key="wp-p1-desc">Redesign of the Trust Counsel website. Designed by the client and implemented by me in WordPress using the Divi builder. Also improved overall site performance and SEO.</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed"
+                            data-key="wp-p1-desc">Redesign of the Trust Counsel website. Designed by the client and
+                            implemented by me in WordPress using the Divi builder. Also improved overall site
+                            performance and SEO.</p>
                         <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">WordPress / Divi</span>
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">SEO / WPO</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">WordPress
+                                / Divi</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">SEO
+                                / WPO</span>
                         </div>
-                        <a href="https://trustcounsel.com/" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
-                            <span data-key="btn-visit">VIEW WEBSITE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://trustcounsel.com/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
+                            <span data-key="btn-visit">VIEW WEBSITE</span> <i
+                                class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Monifai -->
-                <div class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
-                    <div class="aspect-video bg-slate-200 dark:bg-slate-800 flex items-center justify-center relative overflow-hidden">
-                        <i class="fa-solid fa-coins text-6xl text-slate-300 dark:text-slate-700 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./src/img/monifai.jpg" alt="Trust Counsel"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute top-5 left-5">
-                            <span class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-full">Client Project</span>
+                            <span
+                                class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                data-key="tag-full">Client Project</span>
                         </div>
                     </div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Monifai</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed" data-key="wp-p2-desc">Website redesign for Monifai. The design was provided by the client and implemented in WordPress using Elementor Pro. Deployed pages for two countries under a single domain.</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed"
+                            data-key="wp-p2-desc">Website redesign for Monifai. The design was provided by the client
+                            and implemented in WordPress using Elementor Pro. Deployed pages for two countries under a
+                            single domain.</p>
                         <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Elementor Pro</span>
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Multi-Country</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Elementor
+                                Pro</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Multi-Country</span>
                         </div>
-                        <a href="https://monifai.com/" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
-                            <span data-key="btn-visit">VIEW WEBSITE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://monifai.com/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
+                            <span data-key="btn-visit">VIEW WEBSITE</span> <i
+                                class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- El Encanto -->
-                <div class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
-                    <div class="aspect-video bg-slate-200 dark:bg-slate-800 flex items-center justify-center relative overflow-hidden">
-                        <i class="fa-solid fa-mountain-sun text-6xl text-slate-300 dark:text-slate-700 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="group bg-slate-50 dark:bg-slate-950 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./src/img/elencanto.jpg" alt="Trust Counsel"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute top-5 left-5">
-                            <span class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-full">Client Project</span>
+                            <span
+                                class="px-3 py-1 bg-green-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                data-key="tag-full">Client Project</span>
                         </div>
                     </div>
                     <div class="p-8">
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">El Encanto</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed" data-key="wp-p3-desc">Full website overhaul for El Encanto. Implemented in WordPress using the Belicia theme with multi-language support (Spanish / English).</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed"
+                            data-key="wp-p3-desc">Full website overhaul for El Encanto. Implemented in WordPress using
+                            the Belicia theme with multi-language support (Spanish / English).</p>
                         <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Belicia Theme</span>
-                            <span class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Multilingual</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Belicia
+                                Theme</span>
+                            <span
+                                class="px-2.5 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-500 text-[10px] rounded-lg font-bold">Multilingual</span>
                         </div>
-                        <a href="https://staging2.elencanto.com.sv/" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
-                            <span data-key="btn-visit">VIEW WEBSITE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://staging2.elencanto.com.sv/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
+                            <span data-key="btn-visit">VIEW WEBSITE</span> <i
+                                class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                         </a>
                     </div>
                 </div>
@@ -212,41 +301,61 @@
     <section id="code-projects" class="py-24 bg-slate-50 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="mb-16 text-center lg:text-left">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-key="code-title">Development Projects</h2>
-                <p class="text-slate-500 dark:text-slate-400 max-w-xl" data-key="code-subtitle">Personal projects built from scratch — no CMS, no templates.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-key="code-title">
+                    Development Projects</h2>
+                <p class="text-slate-500 dark:text-slate-400 max-w-xl" data-key="code-subtitle">Personal projects built
+                    from scratch — no CMS, no templates.</p>
                 <div class="h-1.5 w-20 bg-indigo-600 rounded-full mt-6 mx-auto lg:mx-0"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
                 <!-- ⭐ Football Scout Analytics — Featured (full width) -->
-                <div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-indigo-200 dark:border-indigo-800/50 shadow-sm transition-all duration-300 project-card md:col-span-2">
+                <div
+                    class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-indigo-200 dark:border-indigo-800/50 shadow-sm transition-all duration-300 project-card md:col-span-2">
                     <div class="md:flex">
                         <!-- Visual -->
-                        <div class="md:w-2/5 min-h-[200px] bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/40 dark:to-purple-950/40 flex items-center justify-center relative">
-                            <i class="fa-solid fa-futbol text-8xl text-indigo-200 dark:text-indigo-800 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="md:w-2/5 min-h-[200px] relative overflow-hidden">
+                            <img src="./src/img/football-scout.jpg" alt="Football Scout Analytics"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute top-5 left-5 flex gap-2 flex-wrap">
-                                <span class="px-3 py-1 bg-indigo-600 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-code">Custom Code</span>
-                                <span class="px-3 py-1 bg-amber-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-featured">Featured</span>
+                                <span
+                                    class="px-3 py-1 bg-indigo-600 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                    data-key="tag-code">Custom Code</span>
+                                <span
+                                    class="px-3 py-1 bg-amber-500 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                    data-key="tag-featured">Featured</span>
                             </div>
                         </div>
                         <!-- Content -->
                         <div class="md:w-3/5 p-8 md:p-10">
-                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3" data-key="code-p4-title">Football Scout Analytics</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed" data-key="code-p4-desc">
-                                Full-stack scouting platform that analyzes 4,000+ real players from 5 major European leagues. Built a custom percentile-rank algorithm in Python to generate scouting scores, with an interactive dashboard featuring radar charts and transfer recommendations.
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3" data-key="code-p4-title">
+                                Football Scout Analytics</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed"
+                                data-key="code-p4-desc">
+                                Full-stack scouting platform that analyzes 4,000+ real players from 5 major European
+                                leagues. Built a custom percentile-rank algorithm in Python to generate scouting scores,
+                                with an interactive dashboard featuring radar charts and transfer recommendations.
                             </p>
                             <div class="flex flex-wrap gap-2 mb-8">
-                                <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">React</span>
-                                <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">FastAPI</span>
-                                <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">PostgreSQL</span>
-                                <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">Python / Pandas</span>
+                                <span
+                                    class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">React</span>
+                                <span
+                                    class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">FastAPI</span>
+                                <span
+                                    class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">PostgreSQL</span>
+                                <span
+                                    class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">Python
+                                    / Pandas</span>
                             </div>
                             <div class="flex gap-5">
-                                <a href="https://football-scout-frontend-sigma.vercel.app" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
-                                    <span data-key="btn-visit">VIEW WEBSITE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                                <a href="https://football-scout-frontend-sigma.vercel.app" target="_blank"
+                                    class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
+                                    <span data-key="btn-visit">VIEW WEBSITE</span> <i
+                                        class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                                 </a>
-                                <a href="https://github.com/jmonterolad/football-scout-backend" target="_blank" class="inline-flex items-center text-slate-500 dark:text-slate-400 font-bold hover:text-indigo-600 dark:hover:text-indigo-400 transition text-sm">
+                                <a href="https://github.com/jmonterolad/football-scout-backend" target="_blank"
+                                    class="inline-flex items-center text-slate-500 dark:text-slate-400 font-bold hover:text-indigo-600 dark:hover:text-indigo-400 transition text-sm">
                                     <i class="fa-brands fa-github mr-2"></i> <span data-key="btn-repo">VIEW REPO</span>
                                 </a>
                             </div>
@@ -255,29 +364,44 @@
                 </div>
 
                 <!-- Warhammer 40KSV Rankings -->
-                <div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
-                    <div class="aspect-video bg-slate-100 dark:bg-slate-800 flex items-center justify-center relative overflow-hidden">
-                        <i class="fa-solid fa-trophy text-6xl text-indigo-200 dark:text-indigo-900 group-hover:scale-110 transition-transform duration-500"></i>
+                <div
+                    class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm transition-all duration-300 project-card">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="./src/img/warhammer.jpg" alt="Warhammer 40KSV Rankings"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute top-5 left-5">
-                            <span class="px-3 py-1 bg-indigo-600 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest" data-key="tag-code">Custom Code</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-600 text-white text-[10px] font-black rounded-lg shadow-lg uppercase tracking-widest"
+                                data-key="tag-code">Custom Code</span>
                         </div>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3" data-key="code-p3-title">Warhammer 40KSV Rankings</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed" data-key="code-p3-desc">A rankings portal for the Warhammer 40K El Salvador community. Built with Vue.js on the frontend and FastAPI on the backend, using a private Google Sheet as the live data source.</p>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3" data-key="code-p3-title">
+                            Warhammer 40KSV Rankings</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed"
+                            data-key="code-p3-desc">A rankings portal for the Warhammer 40K El Salvador community. Built
+                            with Vue.js on the frontend and FastAPI on the backend, using a private Google Sheet as the
+                            live data source.</p>
                         <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">Vue.js</span>
-                            <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">FastAPI</span>
-                            <span class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">GSheets API</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">Vue.js</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">FastAPI</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-500 text-[10px] rounded-lg font-bold">GSheets
+                                API</span>
                         </div>
-                        <a href="https://rankingw40ksv.vercel.app/" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
-                            <span data-key="btn-visit">VIEW WEBSITE</span> <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        <a href="https://rankingw40ksv.vercel.app/" target="_blank"
+                            class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-bold hover:text-indigo-800 transition text-sm">
+                            <span data-key="btn-visit">VIEW WEBSITE</span> <i
+                                class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Placeholder / Próximo proyecto -->
-                <div class="bg-slate-100 dark:bg-slate-900/50 rounded-3xl border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center p-8 text-center min-h-[280px]">
+                <div
+                    class="bg-slate-100 dark:bg-slate-900/50 rounded-3xl border-2 border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center p-8 text-center min-h-[280px]">
                     <div>
                         <i class="fa-solid fa-code text-4xl text-slate-300 dark:text-slate-700 mb-4"></i>
                         <p class="text-slate-400 dark:text-slate-600 font-semibold text-sm">Next project coming soon</p>
@@ -292,83 +416,109 @@
     <section id="skills" class="py-24 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-key="skills-title">Technical Skills</h2>
-                <p class="text-slate-500 dark:text-slate-400" data-key="skills-subtitle">Tools I use professionally and in my own projects.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4" data-key="skills-title">
+                    Technical Skills</h2>
+                <p class="text-slate-500 dark:text-slate-400" data-key="skills-subtitle">Tools I use professionally and
+                    in my own projects.</p>
                 <div class="h-1.5 w-20 bg-indigo-600 rounded-full mt-6 mx-auto"></div>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
                 <!-- HTML / CSS -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-orange-50 dark:bg-orange-900/20 text-orange-500 dark:text-orange-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-orange-50 dark:bg-orange-900/20 text-orange-500 dark:text-orange-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-solid fa-code text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">HTML / CSS</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-html-desc">Semantic markup and responsive design with Tailwind CSS.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-html-desc">
+                        Semantic markup and responsive design with Tailwind CSS.</p>
                 </div>
 
                 <!-- JavaScript -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-500 dark:text-yellow-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-500 dark:text-yellow-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-brands fa-js text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">JavaScript</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-js-desc">Dynamic interactivity, async logic and DOM manipulation.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-js-desc">
+                        Dynamic interactivity, async logic and DOM manipulation.</p>
                 </div>
 
                 <!-- React -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-500 dark:text-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-500 dark:text-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-brands fa-react text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">React</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-react-desc">Component-based UIs with hooks and REST API integration.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-react-desc">
+                        Component-based UIs with hooks and REST API integration.</p>
                 </div>
 
                 <!-- Vue.js -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-green-50 dark:bg-green-900/20 text-green-500 dark:text-green-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-green-50 dark:bg-green-900/20 text-green-500 dark:text-green-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-brands fa-vuejs text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">Vue.js</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-vue-desc">Reactive interfaces and SPA development with Vue 3.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-vue-desc">
+                        Reactive interfaces and SPA development with Vue 3.</p>
                 </div>
 
                 <!-- Python -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-blue-500 dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 text-blue-500 dark:text-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-brands fa-python text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">Python</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-py-desc">Data processing, scripting and automation workflows.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-py-desc">Data
+                        processing, scripting and automation workflows.</p>
                 </div>
 
                 <!-- FastAPI -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-teal-50 dark:bg-teal-900/20 text-teal-500 dark:text-teal-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-teal-50 dark:bg-teal-900/20 text-teal-500 dark:text-teal-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-solid fa-bolt text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">FastAPI</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-fastapi-desc">REST APIs with Pydantic validation and async endpoints.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-fastapi-desc">
+                        REST APIs with Pydantic validation and async endpoints.</p>
                 </div>
 
                 <!-- PostgreSQL -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-solid fa-database text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">PostgreSQL</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-sql-desc">Database design and queries in production projects.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-sql-desc">
+                        Database design and queries in production projects.</p>
                 </div>
 
                 <!-- Git -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
-                    <div class="w-16 h-16 bg-red-50 dark:bg-red-900/20 text-red-500 dark:text-red-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div
+                    class="skill-card bg-slate-50 dark:bg-slate-950 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 text-center">
+                    <div
+                        class="w-16 h-16 bg-red-50 dark:bg-red-900/20 text-red-500 dark:text-red-400 rounded-2xl flex items-center justify-center mx-auto mb-5">
                         <i class="fa-brands fa-git-alt text-3xl"></i>
                     </div>
                     <h3 class="text-lg font-bold mb-2 text-slate-900 dark:text-white">Git</h3>
-                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-git-desc">Version control and team collaboration with Git and GitHub.</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed" data-key="skill-git-desc">
+                        Version control and team collaboration with Git and GitHub.</p>
                 </div>
 
             </div>
@@ -379,38 +529,54 @@
     <section id="services" class="py-24 bg-slate-50 dark:bg-slate-950">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4" data-key="services-title">What I Build</h2>
-                <p class="text-slate-500 dark:text-slate-400" data-key="services-subtitle">The three areas where I have real, hands-on experience.</p>
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4" data-key="services-title">What I
+                    Build</h2>
+                <p class="text-slate-500 dark:text-slate-400" data-key="services-subtitle">The three areas where I have
+                    real, hands-on experience.</p>
                 <div class="h-1 w-20 bg-indigo-600 rounded-full mt-4 mx-auto"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
 
                 <!-- Web Applications -->
-                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div
+                        class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
                         <i class="fa-solid fa-layer-group text-3xl text-indigo-600 dark:text-indigo-400"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4 dark:text-white" data-key="service1-title">Web Applications</h3>
-                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service1-desc">Full-stack apps with React or Vue.js on the frontend and FastAPI + PostgreSQL on the backend. Data pipelines, interactive dashboards, and REST APIs.</p>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service1-desc">
+                        Full-stack apps with React or Vue.js on the frontend and FastAPI + PostgreSQL on the backend.
+                        Data pipelines, interactive dashboards, and REST APIs.</p>
                 </div>
 
                 <!-- WordPress Development -->
-                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div
+                        class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
                         <i class="fa-brands fa-wordpress text-3xl text-indigo-600 dark:text-indigo-400"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 dark:text-white" data-key="service2-title">WordPress Development</h3>
-                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service2-desc">Professional implementations using Divi, Elementor Pro, and custom themes. Performance optimization, SEO, and multi-language support for real clients.</p>
+                    <h3 class="text-xl font-bold mb-4 dark:text-white" data-key="service2-title">WordPress Development
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service2-desc">
+                        Professional implementations using Divi, Elementor Pro, and custom themes. Performance
+                        optimization, SEO, and multi-language support for real clients.</p>
                 </div>
 
                 <!-- Integrations & Automation -->
-                <div class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
+                <div
+                    class="bg-white dark:bg-slate-900 p-10 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all">
+                    <div
+                        class="w-16 h-16 bg-indigo-50 dark:bg-indigo-950/30 rounded-2xl flex items-center justify-center mb-8">
                         <i class="fa-solid fa-gears text-3xl text-indigo-600 dark:text-indigo-400"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4 dark:text-white" data-key="service3-title">Integrations & Automation</h3>
-                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service3-desc">Connecting APIs, automating workflows, and processing data with Python. From Google Sheets integrations to third-party API consumption.</p>
+                    <h3 class="text-xl font-bold mb-4 dark:text-white" data-key="service3-title">Integrations &
+                        Automation</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm" data-key="service3-desc">
+                        Connecting APIs, automating workflows, and processing data with Python. From Google Sheets
+                        integrations to third-party API consumption.</p>
                 </div>
 
             </div>
@@ -420,19 +586,27 @@
     <!-- ===================== CONTACT ===================== -->
     <section id="contact" class="py-24 bg-white dark:bg-slate-900">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
-            <div class="bg-indigo-600 rounded-[3rem] p-12 md:p-20 text-white shadow-2xl relative overflow-hidden text-center">
+            <div
+                class="bg-indigo-600 rounded-[3rem] p-12 md:p-20 text-white shadow-2xl relative overflow-hidden text-center">
                 <div class="relative z-10">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight" data-key="contact-title">Let's Work<br>Together</h2>
-                    <p class="text-indigo-100 mb-12 text-lg max-w-2xl mx-auto" data-key="contact-subtitle">Open to remote opportunities and interesting projects. Drop me a line and let's talk.</p>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight" data-key="contact-title">Let's
+                        Work<br>Together</h2>
+                    <p class="text-indigo-100 mb-12 text-lg max-w-2xl mx-auto" data-key="contact-subtitle">Open to
+                        remote opportunities and interesting projects. Drop me a line and let's talk.</p>
 
                     <div class="flex flex-wrap justify-center gap-4">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmonterolad@gmail.com" target="_blank" class="bg-white text-indigo-600 px-10 py-4 rounded-2xl font-bold hover:bg-indigo-50 transition-all shadow-xl">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmonterolad@gmail.com" target="_blank"
+                            class="bg-white text-indigo-600 px-10 py-4 rounded-2xl font-bold hover:bg-indigo-50 transition-all shadow-xl">
                             <i class="fa-solid fa-envelope mr-3"></i><span data-key="btn-email">Send Email</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/jmonterolad/" target="_blank" class="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center hover:bg-indigo-400 transition-all text-2xl border border-indigo-400" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/jmonterolad/" target="_blank"
+                            class="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center hover:bg-indigo-400 transition-all text-2xl border border-indigo-400"
+                            title="LinkedIn">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/jmonterolad" target="_blank" class="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center hover:bg-indigo-400 transition-all text-2xl border border-indigo-400" title="GitHub">
+                        <a href="https://github.com/jmonterolad" target="_blank"
+                            class="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center hover:bg-indigo-400 transition-all text-2xl border border-indigo-400"
+                            title="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
@@ -445,11 +619,13 @@
                 <p class="text-slate-400 dark:text-slate-500 text-sm font-medium uppercase tracking-widest">
                     &copy; <span id="year"></span> | Jose Monterola
                 </p>
-                <p class="text-slate-300 dark:text-slate-600 text-xs mt-2 italic" data-key="footer-note">Developed with passion and code.</p>
+                <p class="text-slate-300 dark:text-slate-600 text-xs mt-2 italic" data-key="footer-note">Developed with
+                    passion and code.</p>
             </footer>
         </div>
     </section>
 
     <script src="./main.js"></script>
 </body>
+
 </html>
