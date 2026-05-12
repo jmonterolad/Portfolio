@@ -6,95 +6,140 @@ function toggleTheme() {
 // Datos de Traducción
 const translations = {
     en: {
-        "nav-home": "Home",
-        "nav-projects": "WordPress",
-        "nav-code": "Code",
-        "nav-skills": "Skills",
-        "nav-services": "Services",
-        "nav-contact": "Contact",
-        "hero-badge": "Web Developer",
-        "hero-title-prefix": "Hi, I'm",
-        "hero-desc": "Specialist in creating high-impact digital experiences. I help my clients build modern websites that not only look great but load fast and are optimized for conversion.",
-        "hero-cta-contact": "Let's Talk Today!",
-        "projects-title": "WordPress Projects",
-        "projects-subtitle": "Websites implemented using WordPress core and professional builders.",
-        "wp-p1-desc": "Redesign of the Trust Counsel website. Designed by Trust Counsel and implemented by me in WordPress using the Divi builder. Also improved overall site performance and helped with SEO.",
-        "wp-p2-desc": "Website redesign for Monifai. The design was created by Monifai and I implemented it in WordPress using Elementor Pro. Implemented pages for two countries under a single domain.",
-        "wp-p3-desc": "Full website change for El Encanto. The design was created by El Encanto and I implemented it in WordPress using the Belicia theme. Implemented multi-language support from Spanish to English.",
-        "tag-full": "Full Implementation",
-        "btn-visit": "VIEW WEBSITE",
-        "btn-repo": "VIEW REPO",
-        "code-title": "Development Projects",
-        "code-subtitle": "Projects developed from scratch using custom code without CMS platforms.",
-        "tag-code": "Custom Code",
-        "code-p1-title": "Rick & Morty Explorer",
-        "code-p1-desc": "A web application consuming the Rick & Morty API where you can search for all characters and view detailed info, such as the number of episodes they appear in. Built with Vue.js.",
-        "code-p2-title": "Flutter Stopwatch",
-        "code-p2-desc": "A high-performance stopwatch application developed using Flutter. Focused on precision, clean state management, and a minimalist user interface.",
+        // Nav
+        "nav-home":        "Home",
+        "nav-projects":    "WordPress",
+        "nav-code":        "Projects",
+        "nav-skills":      "Skills",
+        "nav-services":    "What I Build",
+        "nav-contact":     "Contact",
+
+        // Hero
+        "hero-badge":          "Web Developer",
+        "hero-title-prefix":   "Hi, I'm",
+        "hero-desc":           "Web developer with 6+ years of professional experience in digital agency environments. I implement client projects in WordPress and build custom full-stack applications using React, FastAPI, and PostgreSQL.",
+        "hero-cta-contact":    "Let's Talk",
+        "hero-cta-projects":   "See My Work",
+
+        // WordPress Projects
+        "projects-title":    "WordPress Projects",
+        "projects-subtitle": "Client projects delivered in a professional agency environment.",
+        "tag-full":          "Client Project",
+        "btn-visit":         "VIEW WEBSITE",
+        "btn-repo":          "VIEW REPO",
+        "wp-p1-desc": "Redesign of the Trust Counsel website. Designed by the client and implemented by me in WordPress using the Divi builder. Also improved overall site performance and SEO.",
+        "wp-p2-desc": "Website redesign for Monifai. The design was provided by the client and implemented in WordPress using Elementor Pro. Deployed pages for two countries under a single domain.",
+        "wp-p3-desc": "Full website overhaul for El Encanto. Implemented in WordPress using the Belicia theme with multi-language support (Spanish / English).",
+
+        // Development Projects
+        "code-title":    "Development Projects",
+        "code-subtitle": "Personal projects built from scratch — no CMS, no templates.",
+        "tag-code":      "Custom Code",
+        "tag-featured":  "Featured",
+
         "code-p3-title": "Warhammer 40KSV Rankings",
-        "code-p3-desc": "A dedicated rankings portal for the Warhammer 40K El Salvador community. Built with Vue.js and FastAPI, using a private Google Sheet as the database.",
-        "skills-title": "Programming Skills",
-        "skills-subtitle": "Technical tools I use to build custom solutions.",
-        "skill-html-desc": "Semantic markup and responsive design using modern frameworks like Tailwind CSS.",
-        "skill-js-desc": "Dynamic interactivity and DOM manipulation to improve user experience.",
-        "skill-git-desc": "Version control and collaboration using Git and GitHub for clean project management.",
-        "skill-py-desc": "Task automation, data analysis, and developing efficient scripts.",
-        "skill-php-desc": "Theme development, custom plugin creation, and server-side logic for WordPress.",
-        "services-title": "How Can I Help You?",
-        "services-subtitle": "WordPress solutions focused on results for your digital business.",
-        "service1-title": "WordPress 0 to 100",
-        "service1-desc": "Complete installation and configuration of professional websites, SEO-ready and fully self-manageable.",
-        "service2-title": "Redesign & Optimization",
-        "service2-desc": "Is your current site not convincing or slow? I update templates and optimize technical performance for Google.",
-        "contact-title": "Have a Project on Your Hands?",
-        "contact-subtitle": "I'm available to help you build or improve your digital presence. Drop me a line and let's discuss the details.",
+        "code-p3-desc":  "A rankings portal for the Warhammer 40K El Salvador community. Built with Vue.js on the frontend and FastAPI on the backend, using a private Google Sheet as the live data source.",
+
+        "code-p4-title": "Football Scout Analytics",
+        "code-p4-desc":  "Full-stack scouting platform that analyzes 4,000+ real players from 5 major European leagues. Built a custom percentile-rank algorithm in Python to generate scouting scores, with an interactive dashboard featuring radar charts and transfer recommendations.",
+
+        // Skills
+        "skills-title":    "Technical Skills",
+        "skills-subtitle": "Tools I use professionally and in my own projects.",
+        "skill-html-desc":    "Semantic markup and responsive design with Tailwind CSS and modern layout techniques.",
+        "skill-js-desc":      "Dynamic interactivity, async logic, and DOM manipulation for real user-facing features.",
+        "skill-react-desc":   "Component-based UIs with hooks, state management, and integration with REST APIs.",
+        "skill-vue-desc":     "Reactive interfaces and SPA development with Vue 3 and the Composition API.",
+        "skill-py-desc":      "Data processing, REST APIs with FastAPI, scripting, and automation workflows.",
+        "skill-fastapi-desc": "Building and deploying REST APIs with FastAPI, Pydantic validation, and async endpoints.",
+        "skill-sql-desc":     "Database design, queries, and integration with PostgreSQL in production projects.",
+        "skill-git-desc":     "Version control and team collaboration using Git and GitHub.",
+
+        // What I Build (formerly Services)
+        "services-title":    "What I Build",
+        "services-subtitle": "The three areas where I have real, hands-on experience.",
+        "service1-title": "Web Applications",
+        "service1-desc":  "Full-stack apps with React or Vue.js on the frontend and FastAPI + PostgreSQL on the backend. Data pipelines, interactive dashboards, and REST APIs.",
+        "service2-title": "WordPress Development",
+        "service2-desc":  "Professional implementations using Divi, Elementor Pro, and custom themes. Performance optimization, SEO, and multi-language support for real clients.",
+        "service3-title": "Integrations & Automation",
+        "service3-desc":  "Connecting APIs, automating workflows, and processing data with Python. From Google Sheets integrations to third-party API consumption.",
+
+        // Contact
+        "contact-title":    "Let's Work Together",
+        "contact-subtitle": "Open to remote opportunities and interesting projects. Drop me a line and let's talk.",
         "btn-email": "Send Email",
+
+        // Footer
         "footer-note": "Developed with passion and code."
     },
+
     es: {
-        "nav-home": "Inicio",
-        "nav-projects": "WordPress",
-        "nav-code": "Código",
-        "nav-skills": "Habilidades",
-        "nav-services": "Servicios",
-        "nav-contact": "Contacto",
-        "hero-badge": "Desarrollador Web",
-        "hero-title-prefix": "Hola, soy",
-        "hero-desc": "Especialista en la creación de experiencias digitales de alto impacto. Ayudo a mis clientes a construir sitios web modernos que no solo se ven bien, sino que cargan rápido y están optimizados para vender.",
-        "hero-cta-contact": "¡Hablemos hoy!",
-        "projects-title": "Proyectos WordPress",
-        "projects-subtitle": "Sitios web implementados utilizando WordPress y constructores profesionales.",
-        "wp-p1-desc": "Rediseño del sitio web de Trust Counsel. Diseñado por Trust Counsel e implementado por mí en WordPress usando el constructor Divi. También mejoré el rendimiento de todo el sitio web y ayudé con el SEO.",
-        "wp-p2-desc": "Rediseño del sitio web para Monifai. El diseño fue creado por Monifai y yo lo implementé en WordPress usando Elementor Pro. Implementé páginas para dos países con un mismo dominio.",
-        "wp-p3-desc": "Cambio completo del sitio web para El Encanto. El diseño fue creado por El Encanto y yo lo implementé en WordPress usando el tema Belicia. Implementé el soporte multi lenguaje de Español a Inglés.",
-        "tag-full": "Implementación Total",
-        "btn-visit": "VER SITIO WEB",
-        "btn-repo": "VER REPOSITORIO",
-        "code-title": "Proyectos de Desarrollo",
-        "code-subtitle": "Proyectos desarrollados desde cero utilizando código personalizado sin CMS.",
-        "tag-code": "Código a Medida",
-        "code-p1-title": "Rick & Morty Explorer",
-        "code-p1-desc": "Aplicación web que consume la API de Rick & Morty donde puedes buscar a todos los personajes y ver su información detallada, como en cuántos episodios aparecen. Creada con Vue.js.",
-        "code-p2-title": "Cronómetro Flutter",
-        "code-p2-desc": "Aplicación de cronómetro de alto rendimiento desarrollada con Flutter. Enfocada en la precisión y gestión de estado limpia.",
+        // Nav
+        "nav-home":        "Inicio",
+        "nav-projects":    "WordPress",
+        "nav-code":        "Proyectos",
+        "nav-skills":      "Habilidades",
+        "nav-services":    "Qué Construyo",
+        "nav-contact":     "Contacto",
+
+        // Hero
+        "hero-badge":          "Desarrollador Web",
+        "hero-title-prefix":   "Hola, soy",
+        "hero-desc":           "Desarrollador web con más de 6 años de experiencia profesional en agencias digitales. Implemento proyectos para clientes en WordPress y construyo aplicaciones full-stack con React, FastAPI y PostgreSQL.",
+        "hero-cta-contact":    "Hablemos",
+        "hero-cta-projects":   "Ver mis proyectos",
+
+        // WordPress Projects
+        "projects-title":    "Proyectos WordPress",
+        "projects-subtitle": "Proyectos entregados para clientes en un entorno de agencia profesional.",
+        "tag-full":          "Proyecto de Cliente",
+        "btn-visit":         "VER SITIO WEB",
+        "btn-repo":          "VER REPOSITORIO",
+        "wp-p1-desc": "Rediseño del sitio web de Trust Counsel. Diseñado por el cliente e implementado por mí en WordPress con el constructor Divi. También mejoré el rendimiento general del sitio y el SEO.",
+        "wp-p2-desc": "Rediseño del sitio web para Monifai. El diseño fue provisto por el cliente e implementado en WordPress con Elementor Pro. Desplegué páginas para dos países bajo un único dominio.",
+        "wp-p3-desc": "Renovación completa del sitio web de El Encanto. Implementado en WordPress con el tema Belicia, con soporte multilenguaje (español / inglés).",
+
+        // Development Projects
+        "code-title":    "Proyectos de Desarrollo",
+        "code-subtitle": "Proyectos propios construidos desde cero — sin CMS, sin plantillas.",
+        "tag-code":      "Código Propio",
+        "tag-featured":  "Destacado",
+
         "code-p3-title": "Warhammer 40KSV Rankings",
-        "code-p3-desc": "Portal de rankings dedicado para la comunidad de Warhammer 40K El Salvador. Construido con Vue.js y FastAPI, utilizando una Google Sheet privada como base de datos.",
-        "skills-title": "Habilidades de Programación",
-        "skills-subtitle": "Herramientas técnicas que utilizo para construir soluciones personalizadas.",
-        "skill-html-desc": "Maquetación semántica y diseño responsivo utilizando frameworks modernos como Tailwind CSS.",
-        "skill-js-desc": "Interactividad dinámica y manipulación del DOM para mejorar la experiencia de usuario.",
-        "skill-git-desc": "Control de versiones y colaboración utilizando Git y GitHub para una gestión de proyectos limpia.",
-        "skill-py-desc": "Automatización de tareas, análisis de datos y desarrollo de scripts eficientes.",
-        "skill-php-desc": "Desarrollo de temas, creación de plugins personalizados y lógica de servidor para WordPress.",
-        "services-title": "¿En qué puedo ayudarte?",
-        "services-subtitle": "Soluciones de WordPress enfocadas en resultados para tu negocio digital.",
-        "service1-title": "WordPress de 0 a 100",
-        "service1-desc": "Instalación y configuración completa de sitios web profesionales, listos para SEO y totalmente autogestionables.",
-        "service2-title": "Rediseño y Optimización",
-        "service2-desc": "¿Tu sitio actual no convence o es lento? Actualizo plantillas y optimizo el rendimiento técnico para Google.",
-        "contact-title": "¿Tienes un Proyecto entre Manos?",
-        "contact-subtitle": "Estoy disponible para ayudarte a construir o mejorar tu presencia digital. Escríbeme y hablemos de los detalles.",
+        "code-p3-desc":  "Portal de rankings para la comunidad de Warhammer 40K de El Salvador. Frontend con Vue.js y backend con FastAPI, usando una Google Sheet privada como fuente de datos en vivo.",
+
+        "code-p4-title": "Football Scout Analytics",
+        "code-p4-desc":  "Plataforma de scouting full-stack que analiza más de 4,000 jugadores reales de 5 ligas europeas. Algoritmo propio en Python con percentil rank para generar scores, con dashboard interactivo de radar charts y recomendaciones de fichajes.",
+
+        // Skills
+        "skills-title":    "Habilidades Técnicas",
+        "skills-subtitle": "Herramientas que uso de forma profesional y en mis proyectos propios.",
+        "skill-html-desc":    "Maquetación semántica y diseño responsivo con Tailwind CSS y técnicas modernas de layout.",
+        "skill-js-desc":      "Interactividad dinámica, lógica async y manipulación del DOM para funcionalidades reales.",
+        "skill-react-desc":   "UIs basadas en componentes con hooks, manejo de estado e integración con APIs REST.",
+        "skill-vue-desc":     "Interfaces reactivas y SPAs con Vue 3 y la Composition API.",
+        "skill-py-desc":      "Procesamiento de datos, APIs REST con FastAPI, scripting y automatización.",
+        "skill-fastapi-desc": "Construcción y despliegue de APIs REST con FastAPI, validación Pydantic y endpoints async.",
+        "skill-sql-desc":     "Diseño de bases de datos, consultas e integración con PostgreSQL en proyectos reales.",
+        "skill-git-desc":     "Control de versiones y colaboración en equipo con Git y GitHub.",
+
+        // What I Build
+        "services-title":    "Qué Construyo",
+        "services-subtitle": "Las tres áreas donde tengo experiencia real y demostrable.",
+        "service1-title": "Aplicaciones Web",
+        "service1-desc":  "Apps full-stack con React o Vue.js en el frontend y FastAPI + PostgreSQL en el backend. Pipelines de datos, dashboards interactivos y APIs REST.",
+        "service2-title": "Desarrollo WordPress",
+        "service2-desc":  "Implementaciones profesionales con Divi, Elementor Pro y temas personalizados. Optimización de rendimiento, SEO y soporte multilenguaje para clientes reales.",
+        "service3-title": "Integraciones y Automatización",
+        "service3-desc":  "Conexión de APIs, automatización de flujos y procesamiento de datos con Python. Desde integraciones con Google Sheets hasta consumo de APIs de terceros.",
+
+        // Contact
+        "contact-title":    "Trabajemos Juntos",
+        "contact-subtitle": "Disponible para oportunidades remotas y proyectos interesantes. Escríbeme y hablemos.",
         "btn-email": "Enviar Correo",
+
+        // Footer
         "footer-note": "Desarrollado con pasión y código."
     }
 };
